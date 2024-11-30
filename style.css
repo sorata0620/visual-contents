@@ -1,0 +1,144 @@
+/* 一般的なリセット */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* グリッドデザイン */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ヘッダーセクション */
+header {
+    grid-column: span 3;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ナビゲーション */
+nav {
+    grid-column: span 3;
+    background-color: #cc0000;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #ffdddd;
+    color: #dd0000;
+}
+
+/* メインコンテンツ */
+.content {
+    grid-column: span 2;
+    padding: 20px;
+}
+
+/* フォーム */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffdddd;
+    color: #dd0000;
+}
+
+/* フッターセクション */
+footer {
+    grid-column: span 3;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* ドロップダウンメニュー */
+ul.ddmenu {
+    margin: 0;
+    padding: 0;
+    background-color: #cc0000;
+}
+
+ul.ddmenu li {
+    width: 125px;
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
+ul.ddmenu a {
+    background-color: #cc0000;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+ul.ddmenu ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+ul.ddmenu a:hover {
+    background-color: #ffdddd;
+    color: #dd0000;
+}
+
+ul.ddmenu li:hover ul {
+    display: block;
+}
